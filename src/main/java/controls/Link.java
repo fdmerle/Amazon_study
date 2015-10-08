@@ -1,4 +1,4 @@
-package test.java.controls;
+package controls;
 
 /**
  * Created by Dmytro_Moskalenko2 on 9/29/2015.

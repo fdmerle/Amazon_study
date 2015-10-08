@@ -1,4 +1,4 @@
-package test.java.controls;
+package controls;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
