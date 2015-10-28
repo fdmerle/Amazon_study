@@ -1,44 +1,25 @@
-import config.Initialize;
-import org.openqa.selenium.WebDriver;
+import Resources.ImputData;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
 
-import java.util.HashMap;
+import java.util.List;
 
-public class AmazonTest {
-
-    Initialize initDriver;
-    private HashMap <String,String> filterDictionary;
-    /*@BeforeMethod
-    public void setUp() {
-
-    }*/
+public class AmazonTest extends MainTest {
+    private ImputData inputData;
+    private AmazonPage amazonPage;
 
 
     @Test
-    public void amazonTest(){
-        AmazonPage amazonPageInit=new AmazonPage();
-        WebDriver amazonDriver=amazonPageInit.pageInit("http://AmazonPage.com");
-        initDriver = new Initialize();
-        AmazonPage amazonPageFactory = initDriver.initialize(amazonPageInit,amazonDriver);
+    public void amazonTest() {
 
-        String dataToInput = "Droid Turbo";
-
-        amazonPageFactory.changeCategory("Electronics");
-        amazonPageFactory.inputValue(dataToInput);
-        amazonPageFactory.pressSubmit();
-
-        filterDictionary= new HashMap<>();
-        filterDictionary.put("Brand","Motorola");
-        filterDictionary.put("Condition","New");
-        amazonPageInit.filterItemClick(filterDictionary,amazonDriver);
-
-
+        initDriver("FireFox");
+        amazonPage.openPage();
+        amazonPage.searchForGoods("Droid Turbo", "Electronics", "Featured");
+        amazonPage.filterItem(inputData.dataForFilter());
+        amazonPage.waitWhenObjectAppeared();
+        List tmpList = amazonPage.returnListOfElement();
+        amazonPage.clickTheFirstResult();
 
 
     }
-/*    @AfterMethod
-    public void cleaner(){
-        amazonPage.closeWindow();
-    }*/
 }

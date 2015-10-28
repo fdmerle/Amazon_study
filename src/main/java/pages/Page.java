@@ -1,32 +1,39 @@
 package pages;
 
+import config.DriverObject;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Action;
-
-import java.util.concurrent.TimeUnit;
-
-
+/**
+ * Created by Dmytro_Moskalenko2 on 10/5/2015.
+ */
 public abstract class Page {
 
-    public WebDriver driver;
+    DriverObject driver;
 
-
-   public WebDriver pageInit(String URL){
-       driver = new FirefoxDriver();
-       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-       driver.get(URL);
-       return driver;
-   }
-
-    public void driverCooldown(WebDriver driver, int intCooldown){
-        driver.manage().timeouts().implicitlyWait(intCooldown, TimeUnit.SECONDS);
+    public Page (DriverObject driver) {
+        this.driver = driver;
+    }
+    public void inputValue(String dateToInputm, WebElement searchField) {
+        searchField.sendKeys(dateToInputm);
     }
 
-   public void  doWithChangedTimeout(Action action, int timeout){
-
+    public void clearInputValue(WebElement searchField) {
+        searchField.clear();
     }
+
+    public void changeCategory(String categoryName,WebElement searchDropdownBox) {
+        Select dropDown=new Select(searchDropdownBox);
+        dropDown.selectByVisibleText(categoryName);
+    }
+
+    public void pressSubmit(WebElement searchButton) {
+        searchButton.click();
+    }
+
+
+
+
 
 
 
