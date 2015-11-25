@@ -1,31 +1,24 @@
 package controls;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class InputField extends Element {
+public class InputField {
 
-    public InputField(WebDriver driver, By by) {
-        super(driver, by);
-    }
+    public static boolean setInputField(WebElement inField, String valueToEnter) {
 
-    public void setInputField(By control, String valueToEnter) {
-        WebElement inField = driver.findElement(control);
+        boolean flag = false;
         inField.sendKeys(valueToEnter);
+        for (int i = 0; i < 10; i++) {
+            flag = inField.getAttribute("value").equals(valueToEnter);
+            if (!flag) {
+                inField.clear();
+                inField.sendKeys(valueToEnter);
+            } else {
+                break;
+            }
+        }
+        return flag;
     }
 
-    public void setInputField(WebElement inField, String valueToEnter) {
-        inField.sendKeys(valueToEnter);
-    }
 
-    public String getInputField(By control) {
-        return driver.findElement(control).getText();
-
-    }
-
-    public void Clear(By control) {
-        driver.findElement(control).clear();
-
-    }
 }
