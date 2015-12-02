@@ -9,10 +9,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -22,22 +24,20 @@ import java.util.concurrent.TimeUnit;
 public class DriverObject extends RemoteWebDriver {
     private WebDriver driver;
 
-    public void pageInit(String browserType) {
+    public void pageInit(String browserType){
+
         switch (browserType) {
             case "FireFox":
                 ProfilesIni profile = new ProfilesIni();
                 FirefoxProfile myProfile = profile.getProfile("automation");
                 driver = new FirefoxDriver(myProfile);
                 break;
-
-
             case "Chrome":
                 URL urlChrome = DriverObject.class.getClassLoader().getResource("chromedriver.exe");
                 String strPathChrome = urlChrome.getPath();
                 System.setProperty("webdriver.chrome.driver", strPathChrome);
                 driver = new ChromeDriver();
                 break;
-
             case "IE":
                 URL urlIE = DriverObject.class.getClassLoader().getResource("IEDriverServer.exe");
                 String strPathIE = urlIE.getPath();
@@ -45,9 +45,33 @@ public class DriverObject extends RemoteWebDriver {
                 driver = new InternetExplorerDriver();
                 break;
         }
-        driver.manage().timeouts().implicitlyWait(ConfigValues.DEFAULT_COOLDOWN_FOR_DRIVER_MSEC, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(ConfigValues.DEFAULT_COOLDOWN_FOR_DRIVER_MSEC, TimeUnit.SECONDS);
 
     }
+
+
+    public void pageInit(String browserType, String driverType) {
+        DesiredCapabilities browser = null;
+
+        switch (browserType) {
+            case "FireFox":
+                browser = DesiredCapabilities.firefox();
+
+                break;
+            case "Chrome":
+                browser = DesiredCapabilities.chrome();
+                break;
+            case "IE":
+                browser = DesiredCapabilities.internetExplorer();
+                break;
+        }
+        try {
+            driver = new RemoteWebDriver(new URL(ConfigValues.SELENIUM_HUB_URL), browser);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public boolean isControlExistOnPage(By locator, int timeout) {
         boolean flag = true;

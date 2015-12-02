@@ -1,3 +1,4 @@
+import Resources.ConfigValues;
 import config.DriverObject;
 import config.FactoryInit;
 import org.testng.annotations.BeforeTest;
@@ -15,10 +16,13 @@ public class MainTest {
         return initDriver.createPageFactory(driver);
     }
 
-    public AmazonPage initDriver(String browserType) {
+    public AmazonPage initDriver(String browserType){
 
         driver = new DriverObject();
-        driver.pageInit(browserType);
+
+        driver.pageInit(browserType, "Grid");
+
+
         amazonPage = pageFactoryCreation();
         return amazonPage;
 
@@ -26,7 +30,7 @@ public class MainTest {
 
     @BeforeTest
     public void initializerAmazonFireFox(){
-        AmazonPage amazonPage = initDriver("Chrome");
+        AmazonPage amazonPage = initDriver(ConfigValues.BROWSER_TYPE);
         amazonPage.openPage();
     }
 
