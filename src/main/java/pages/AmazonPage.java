@@ -1,7 +1,6 @@
 package pages;
 
-import config.DriverObject;
-import config.GoodsExemplar;
+import config.*;
 import controls.InputField;
 import javafx.util.Pair;
 import org.openqa.selenium.By;
@@ -18,18 +17,17 @@ import java.util.List;
  */
 public class AmazonPage extends Page {
 
-   // public static final String XPATH_FOR_MAIN_GOOD = ".//*[@id='result_%d']";
+    // public static final String XPATH_FOR_MAIN_GOOD = ".//*[@id='result_%d']";
     public static final String CSS_FOR_MAIN_GOOD = "#result_%d";
     public static final String FILTER_PARENT_XPATH = ".//*[@id='refinements']";
     public static final String FILTER_PARENT_CSS = "#refinements";
     public static final String XPATH_FOR_PAGE_CONSOL = ".//*[@id='pagn']";
-//    public static final String XPATH_FOR_NEXT_PAGE = ".//*[@id='pagnNextString']";
+    //    public static final String XPATH_FOR_NEXT_PAGE = ".//*[@id='pagnNextString']";
     public static final String CSS_FOR_NEXT_PAGE = "#pagnNextString";
- //   public static final String XPATH_FOR_LAST_PAGE = ".//*[@class='srSprite lastPageRightArrow']";
+    //   public static final String XPATH_FOR_LAST_PAGE = ".//*[@class='srSprite lastPageRightArrow']";
     public static final String CSS_FOR_LAST_PAGE = "span[class='srSprite lastPageRightArrow']";
-//    public static final String XPATH_FOR_RESULT_LIST = ".//li[contains(@id,'result_')]";
+    //    public static final String XPATH_FOR_RESULT_LIST = ".//li[contains(@id,'result_')]";
     public static final String CSS_FOR_RESULT_LIST = "li[id^='result_']";
-
 
 
     //private String xpath_for_filter = FILTER_PARENT_XPATH + "/h2[contains(.,'%s')]/following::span[1][contains(.,'%s')]";
@@ -39,7 +37,7 @@ public class AmazonPage extends Page {
     private String resultFirstCss = "#result_0 a h2";
     //private String xpathDiscount = ".//span[contains(@class,' a-color-secondary a-text-strike')]";
     private String cssDiscount = "span[class^='a-size-small a-color-secondary a-text-strike']";
-//    private String xpathPrice = ".//span[contains(@class, 's-price a-text-bold' )]";
+    //    private String xpathPrice = ".//span[contains(@class, 's-price a-text-bold' )]";
     private String cssPrice = "span[class^= 'a-size-base a-color-price s-price a-text-bold']";
 
     //private String xpathFeedbackAmount = ".//div//a[contains(@href,'customerReviews')]";
