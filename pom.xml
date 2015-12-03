@@ -52,6 +52,7 @@
                             <sources>
                                 <source>src/java/core</source>
                                 <source>src/java/gen</source>
+                                <source>src/main/java/pages</source>
                             </sources>
                         </configuration>
                     </execution>
