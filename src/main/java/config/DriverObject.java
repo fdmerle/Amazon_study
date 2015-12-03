@@ -2,6 +2,7 @@ package config;
 
 import Resources.ConfigValues;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by dmytro_moskalenko2 on 10/21/2015.
  */
-public class DriverObject extends RemoteWebDriver {
+public class DriverObject extends RemoteWebDriver implements TakesScreenshot{
     private WebDriver driver;
 
     public void pageInit(String browserType){
