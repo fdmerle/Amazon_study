@@ -3,12 +3,12 @@ package Java;
 /**
  * Created by Dmytro_Moskalenko2 on 12/4/2015.
  */
-public class calculator {
+public class Calculator {
     private int valFirst;
     private int valSecond;
     private String opearation = "";
 
-    public calculator(String oper1, int val1, int val2) {
+    public Calculator(String oper1, int val1, int val2) {
         opearation = oper1;
         valFirst=val1;
         valSecond=val2;
