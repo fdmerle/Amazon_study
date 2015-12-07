@@ -16,8 +16,7 @@ public class CaclulatorTest {
 
         Calculator calcObj = new Calculator("+", 3, 4);
         Assert.assertEquals(calcObj.action(), 7);
-        calcObj = new Calculator("-", 3, 6);
-        Assert.assertEquals(calcObj.action(), -3);
+
 
     }
 
