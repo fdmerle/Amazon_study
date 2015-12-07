@@ -16,7 +16,7 @@ public class Calculator {
                 return valFirst - valSecond;
 
             default:
-                throw new RuntimeException();
+                throw new IllegalArgumentException();
 
         }
 

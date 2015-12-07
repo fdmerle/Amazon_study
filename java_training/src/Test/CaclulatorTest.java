@@ -23,7 +23,7 @@ public class CaclulatorTest {
         Assert.assertEquals(calcObj.action("-",7,5), 2);
 
     }
-    @Test(expectedExceptions = RuntimeException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class)
     public void testIllegal() {
 
         Assert.assertEquals(calcObj.action("/",7,5), 12);
