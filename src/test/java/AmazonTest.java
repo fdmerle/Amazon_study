@@ -1,9 +1,9 @@
 import Resources.InputData;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-        import pages.AmazonPage;
+import pages.AmazonPage;
 
-        import java.util.List;
+import java.util.List;
 
 public class AmazonTest extends MainTest {
     private InputData inputData;

@@ -1,6 +1,4 @@
-package Java.Actions;
-
-import Java.Interfaces.InterfaceCalc;
+package java.actions;
 
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.

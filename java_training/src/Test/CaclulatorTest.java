@@ -1,8 +1,9 @@
-package Test;
+package test;
 
-import Java.Main.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.main.Calculator;
 
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.

@@ -1,4 +1,4 @@
-package Java.Actions;
+package java.actions;
 
 import java.util.NoSuchElementException;
 
