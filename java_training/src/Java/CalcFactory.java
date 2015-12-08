@@ -1,18 +1,17 @@
 package Java;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.
  */
 public class CalcFactory {
 
-    public List<Integer> returnAll(){
-        List<Integer> results = new ArrayList<>();
-        results.add(new Deduct().returnDeduct(10,15));
-        results.add(new Mult().returnMult(10, 15));
-        results.add(new Sum().returnSum(10,15));
+    public HashMap<String,InterfaceCalc> returnCalc(){
+        HashMap<String,InterfaceCalc> results = new HashMap<>();
+        results.put("+", new Sum());
+        results.put("-", new Deduct());
+        results.put("*", new Sum());
         return results;
     }
 }
