@@ -7,11 +7,11 @@ import java.util.HashMap;
  */
 public class CalcFactory {
 
-    public HashMap<String,InterfaceCalc> returnCalc(){
-        HashMap<String,InterfaceCalc> results = new HashMap<>();
-        results.put("+", new Sum());
-        results.put("-", new Deduct());
-        results.put("*", new Sum());
-        return results;
+    public HashMap<String, InterfaceCalc> returnCalc() {
+        HashMap<String, InterfaceCalc> calculatorObj = new HashMap<>();
+        calculatorObj.put("+", new Sum());
+        calculatorObj.put("-", new Deduct());
+        calculatorObj.put("*", new Mult());
+        return calculatorObj;
     }
 }

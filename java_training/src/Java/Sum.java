@@ -5,8 +5,20 @@ package Java;
  */
 public class Sum implements InterfaceCalc {
 
-    public int returnValue(int val1,int val2){
+    public int returnValue(int... intValues) {
 
-        return val1+val2;
+        int i;
+        int resultDeduct;
+        if (intValues.length == 0) {
+            throw new IllegalArgumentException();
+        }
+
+        resultDeduct = intValues[0];
+        for (i = 1; i < intValues.length; i++) {
+            resultDeduct = resultDeduct + intValues[i];
+
+        }
+
+        return resultDeduct;
     }
 }

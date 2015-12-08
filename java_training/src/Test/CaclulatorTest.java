@@ -14,19 +14,21 @@ public class CaclulatorTest {
     @Test
     public void testSum() {
 
-        Assert.assertEquals(calcObj.action("+",7,5), 12);
+        Assert.assertEquals(calcObj.action("+", 7, 5), 12);
 
     }
+
     @Test
     public void testDeduct() {
 
-        Assert.assertEquals(calcObj.action("-",7,5), 2);
+        Assert.assertEquals(calcObj.action("-", 7, 5), 2);
 
     }
+
     @Test(expectedExceptions = IllegalArgumentException.class)
     public void testIllegal() {
 
-        Assert.assertEquals(calcObj.action("/",7,5), 12);
+        Assert.assertEquals(calcObj.action("/", 7, 5), 12);
 
     }
 

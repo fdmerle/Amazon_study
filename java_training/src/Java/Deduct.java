@@ -5,10 +5,21 @@ package Java;
  */
 public class Deduct implements InterfaceCalc {
 
-        public int returnValue(int val1,int val2){
-
-            return val1-val2;
+    public int returnValue(int... intValues) {
+        int i;
+        int resultDeduct;
+        if (intValues.length == 0) {
+            throw new IllegalArgumentException();
         }
+
+        resultDeduct = intValues[0];
+        for (i = 1; i < intValues.length; i++) {
+            resultDeduct = resultDeduct - intValues[i];
+
+        }
+
+        return resultDeduct;
+    }
 
 
 }

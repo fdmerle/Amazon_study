@@ -8,17 +8,14 @@ import java.util.HashMap;
 public class Calculator {
     private HashMap<String, InterfaceCalc> calculatorObj;
 
-    public int action(String opearation, int valFirst, int valSecond) {
-        CalcFactory calculator = new CalcFactory();
-        calculatorObj = calculator.returnCalc();
-        if (calculatorObj.containsKey(opearation)) {
-            return calculatorObj.get(opearation).returnValue(valFirst, valSecond);
+    public int action(String opearationMath, int... values) {
+        CalcFactory calculatorObj = new CalcFactory();
+        this.calculatorObj = calculatorObj.returnCalc();
+        if (this.calculatorObj.containsKey(opearationMath)) {
+            return this.calculatorObj.get(opearationMath).returnValue(values);
         } else {
             throw new IllegalArgumentException();
         }
-
-
-
 
 
     }
