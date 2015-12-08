@@ -1,6 +1,6 @@
 package java.main;
 
-import java.factory.CalcFactory;
+import java.factory.ActionsHashMapFactory;
 import java.actions.InterfaceActions;
 
 import java.util.HashMap;
@@ -12,7 +12,7 @@ public class Calculator {
     private HashMap<String, InterfaceActions> calculatorObj;
 
     public int action(String opearationMath, int... values) {
-        CalcFactory calculatorObj = new CalcFactory();
+        ActionsHashMapFactory calculatorObj = new ActionsHashMapFactory();
         this.calculatorObj = calculatorObj.returnCalc();
         if (this.calculatorObj.containsKey(opearationMath)) {
             return this.calculatorObj.get(opearationMath).returnValue(values);

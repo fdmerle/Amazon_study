@@ -34,12 +34,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47900e3-8978-4e4c-b2fb-0dd71adc25a2" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\InterfaceCalc.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\factory\CalcFactory.java" afterPath="$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java" />
-      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\main\Calculator.java" afterPath="$PROJECT_DIR$/java_training/src/java/main/Calculator.java" />
-      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Deduct.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Deduct.java" />
-      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Mult.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Mult.java" />
-      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Sum.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Sum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="9f813e01-ef52-439a-bbe0-510babb36d58" name="Failed commit: Default" comment="Final test" />
@@ -70,7 +64,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalcFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java">
+      <file leaf-file-name="ActionsHashMapFactory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/ActionsHashMapFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5540309">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.6415094">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/test/java/test/AmazonTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/config/Initialize.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/Amazon.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/Filter.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestTest.java" />
@@ -213,6 +207,8 @@
         <option value="$PROJECT_DIR$/java_training/src/Java/Factory/CalcFactory.java" />
         <option value="$PROJECT_DIR$/java_training/src/java/Factory/CalcFactory.java" />
         <option value="$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java" />
+        <option value="$PROJECT_DIR$/java_training/src/java/factory/ActionsFactory.java" />
+        <option value="$PROJECT_DIR$/java_training/src/java/factory/ActionsHashMapFactory.java" />
       </list>
     </option>
   </component>
@@ -428,6 +424,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Amazon_study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Amazon_study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java_training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -926,11 +948,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32035595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32035595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38932148" sideWeight="0.51492536" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1364,8 +1386,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7305#7320#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#7305#7320#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1418,19 +1440,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_training/src/java/actions/Sum.java">
+    <entry file="file://$PROJECT_DIR$/java_training/src/test/CaclulatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_training/src/java/actions/Illegal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1444,7 +1460,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_training/src/test/CaclulatorTest.java">
+    <entry file="file://$PROJECT_DIR$/java_training/src/java/actions/Illegal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_training/src/java/actions/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -1452,10 +1476,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java">
+    <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/ActionsHashMapFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5540309">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.6415094">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
