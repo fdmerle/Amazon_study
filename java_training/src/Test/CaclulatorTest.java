@@ -1,6 +1,6 @@
 package Test;
 
-import Java.Calculator;
+import Java.Main.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

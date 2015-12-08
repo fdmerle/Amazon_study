@@ -1,4 +1,6 @@
-package Java;
+package Java.Interfaces;
+
+import Java.Actions.Illegal;
 
 /**
  * Created by Dmytro_Moskalenko2 on 12/8/2015.

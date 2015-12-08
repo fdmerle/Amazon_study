@@ -1,4 +1,7 @@
-package Java;
+package Java.Main;
+
+import Java.Factory.CalcFactory;
+import Java.Interfaces.InterfaceCalc;
 
 import java.util.HashMap;
 

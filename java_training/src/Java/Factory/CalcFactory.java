@@ -1,4 +1,9 @@
-package Java;
+package Java.Factory;
+
+import Java.Actions.Deduct;
+import Java.Interfaces.InterfaceCalc;
+import Java.Actions.Mult;
+import Java.Actions.Sum;
 
 import java.util.HashMap;
 
