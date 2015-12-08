@@ -1,4 +1,4 @@
-package java.actions;
+package calculator.actions;
 
 import java.util.NoSuchElementException;
 

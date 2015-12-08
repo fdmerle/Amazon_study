@@ -1,8 +1,8 @@
-package java.actions;
+package calculator.actions;
 
 /**
  * Created by Dmytro_Moskalenko2 on 12/8/2015.
  */
-public interface InterfaceActions {
+public interface IActions {
     int returnValue(int... intValues) throws Illegal;
 }
