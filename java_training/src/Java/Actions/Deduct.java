@@ -3,7 +3,7 @@ package java.actions;
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.
  */
-public class Deduct implements InterfaceCalc {
+public class Deduct implements InterfaceActions {
 
     public int returnValue(int... argValues) {
         int i;

@@ -34,14 +34,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e47900e3-8978-4e4c-b2fb-0dd71adc25a2" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\DEV\Amazon_study\java_training\src\Java\Interfaces\InterfaceCalc.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_training/Test/CaclulatorTest.class" afterPath="$PROJECT_DIR$/out/production/java_training/Test/CaclulatorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java_training/Java/Calculator.class" afterPath="$PROJECT_DIR$/out/production/java_training/Java/Calculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/AmazonTest.java" afterPath="$PROJECT_DIR$/src/test/java/AmazonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java_training/java_training.iml" afterPath="$PROJECT_DIR$/java_training/java_training.iml" />
+      <change type="DELETED" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\InterfaceCalc.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\factory\CalcFactory.java" afterPath="$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java" />
+      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\main\Calculator.java" afterPath="$PROJECT_DIR$/java_training/src/java/main/Calculator.java" />
+      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Deduct.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Deduct.java" />
+      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Mult.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Mult.java" />
+      <change type="MODIFICATION" beforePath="C:\DEV\Amazon_study\java_training\src\java\actions\Sum.java" afterPath="$PROJECT_DIR$/java_training/src/java/actions/Sum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="9f813e01-ef52-439a-bbe0-510babb36d58" name="Failed commit: Default" comment="Final test" />
+    <list id="b443bb58-a3f2-4eef-bccb-45981c40a433" name="Failed commit: Default (2)" comment="Final test" />
     <ignored path="Amazon_study.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -128,8 +130,8 @@
       <file leaf-file-name="CalcFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5831904">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5540309">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -924,11 +926,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32035595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32035595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38932148" sideWeight="0.51492536" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1452,8 +1454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java_training/src/java/factory/CalcFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5831904">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5540309">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

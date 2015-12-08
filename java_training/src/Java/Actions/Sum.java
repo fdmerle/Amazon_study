@@ -3,7 +3,7 @@ package java.actions;
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.
  */
-public class Sum implements InterfaceCalc {
+public class Sum implements InterfaceActions {
 
     public int returnValue(int... argValues) {
 

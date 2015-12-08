@@ -3,7 +3,7 @@ package java.actions;
 /**
  * Created by Dmytro_Moskalenko2 on 12/7/2015.
  */
-public class Mult implements InterfaceCalc {
+public class Mult implements InterfaceActions {
 
     public int returnValue(int... argValues) {
 

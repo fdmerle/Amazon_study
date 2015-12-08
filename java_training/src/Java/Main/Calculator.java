@@ -1,7 +1,7 @@
 package java.main;
 
 import java.factory.CalcFactory;
-import java.actions.InterfaceCalc;
+import java.actions.InterfaceActions;
 
 import java.util.HashMap;
 
@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Created by Dmytro_Moskalenko2 on 12/4/2015.
  */
 public class Calculator {
-    private HashMap<String, InterfaceCalc> calculatorObj;
+    private HashMap<String, InterfaceActions> calculatorObj;
 
     public int action(String opearationMath, int... values) {
         CalcFactory calculatorObj = new CalcFactory();
