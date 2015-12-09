@@ -5,15 +5,12 @@ package calculator.actions;
  */
 public class Sum implements IActions {
 
-    public int returnValue(int... argList) {
+    public int returnValue(int firstArg, int... argList) {
 
         int i;
         int resultSum;
-        if (argList.length == 0) {
-            throw new IllegalArgumentException();
-        }
 
-        resultSum = argList[0];
+        resultSum = firstArg;
         for (i = 1; i < argList.length; i++) {
             resultSum = resultSum + argList[i];
 

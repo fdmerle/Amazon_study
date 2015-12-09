@@ -5,15 +5,12 @@ package calculator.actions;
  */
 public class Mult implements IActions {
 
-    public int returnValue(int... argList) {
+    public int returnValue(int firstArg, int... argList) {
 
         int i;
         int resultMult;
-        if (argList.length == 0) {
-            throw new IllegalArgumentException();
-        }
 
-        resultMult = argList[0];
+        resultMult = firstArg;
         for (i = 1; i < argList.length; i++) {
             resultMult = resultMult * argList[i];
 

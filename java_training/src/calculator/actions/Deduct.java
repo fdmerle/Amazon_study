@@ -5,14 +5,11 @@ package calculator.actions;
  */
 public class Deduct implements IActions {
 
-    public int returnValue(int... argList) {
+    public int returnValue(int firstArg, int... argList) {
         int i;
         int resultDeduct;
-        if (argList.length == 0) {
-            throw new IllegalArgumentException();
-        }
 
-        resultDeduct = argList[0];
+        resultDeduct = firstArg;
         for (i = 1; i < argList.length; i++) {
             resultDeduct = resultDeduct - argList[i];
 
