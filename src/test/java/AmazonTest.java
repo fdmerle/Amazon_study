@@ -1,5 +1,7 @@
 import Resources.InputData;
 import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
 
@@ -19,6 +21,16 @@ public class AmazonTest extends MainTest {
         driver.waitTillElementLoaded(By.cssSelector(xPath));
         List tmpList = amazonPage.returnListOfElement();
         amazonPage.clickTheFirstResult();
+
+
+    }
+
+    @Test
+    public void someTest() {
+
+        Assert.assertEquals("void", "void");
+        TestListenerAdapter tmp = new TestListenerAdapter();
+        tmp.getFailedTests();
 
 
     }

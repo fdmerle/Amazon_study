@@ -18,7 +18,9 @@ import java.util.List;
 public class AmazonPage extends Page {
 
     // public static final String XPATH_FOR_MAIN_GOOD = ".//*[@id='result_%d']";
-    public static final String CSS_FOR_MAIN_GOOD = "#result_%d";
+//    public static final String CSS_FOR_MAIN_GOOD = "#result_%d";
+    public static final String CSS_FOR_MAIN_GOOD = "#result_";
+
     public static final String FILTER_PARENT_XPATH = ".//*[@id='refinements']";
     public static final String FILTER_PARENT_CSS = "#refinements";
     public static final String XPATH_FOR_PAGE_CONSOL = ".//*[@id='pagn']";

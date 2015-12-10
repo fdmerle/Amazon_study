@@ -1,6 +1,7 @@
 import Resources.ConfigValues;
 import config.DriverObject;
 import config.FactoryInit;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import pages.AmazonPage;
 
@@ -10,13 +11,14 @@ import pages.AmazonPage;
 public class MainTest {
     public DriverObject driver;
     public AmazonPage amazonPage;
+
     public AmazonPage pageFactoryCreation() {
 
         FactoryInit initDriver = new FactoryInit();
         return initDriver.createPageFactory(driver);
     }
 
-    public AmazonPage initDriver(String browserType){
+    public AmazonPage initDriver(String browserType) {
 
         driver = new DriverObject();
 
@@ -29,9 +31,18 @@ public class MainTest {
     }
 
     @BeforeTest
-    public void initializerAmazonFireFox(){
+    public void initializerAmazonFireFox() {
         AmazonPage amazonPage = initDriver(ConfigValues.BROWSER_TYPE);
         amazonPage.openPage();
+    }
+
+    @AfterTest
+    public void failedTestWrapper() {
+
+//        List tmp = getPassedTests();
+//
+//        tmp = getFailedTests();
+//        getAllTestMethods();
     }
 
 }
