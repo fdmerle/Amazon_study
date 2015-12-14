@@ -43,6 +43,7 @@ import org.testng.TestListenerAdapter;
             System.out.println(".....");
         }
 
+
         private void log(String methodName) {
             System.out.println(methodName);
         }

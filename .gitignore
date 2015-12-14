@@ -1,0 +1,11 @@
+$ git status
+    # Untracked files:
+        C:\DEV\Amazon_study\.idea
+	C:\DEV\Amazon_study\target
+    $ cat .git/info/exclude
+    $ cat Documentation/.gitignore
+    # ignore generated html files,
+    *.html
+
+
+
