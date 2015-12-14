@@ -1,11 +1,25 @@
-$ git status
-    # Untracked files:
+
 .idea
 target
-    $ cat .git/info/exclude
-    $ cat Documentation/.gitignore
-    # ignore generated html files,
-    *.html
 
-
-
+*.com
+*.dll
+*.exe
+*.o
+*.so
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+*.log
+*.sql
+*.sqlite
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
