@@ -10,19 +10,23 @@ import java.util.Date;
  * Created by dmytro_moskalenko2 on 12/23/2015.
  */
 public class ResponceUrlBuilder {
-    private String serviceUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
+    private String serviceUrl = "http://api.openweathermap.org/data/2.5/";
     private String serviceToken = "7e6c68e6843af56620fcd8e6a14d62b1";
     private String selectedCountry = "pl";
     private String dateForUrl;
 
     public String returnUrl(String requestCity, String requestDate) {
         dateForUrl = getDateString(requestDate);
-        return serviceUrl+ requestCity + "," + selectedCountry + "&units=metric&APPID=" + serviceToken;
+        return serviceUrl+"weather?q=" + requestCity + "," + selectedCountry + "&units=metric&APPID=" + serviceToken;
     }
 
     public String returnUrl(String requestDate) {
+        String krakowCityCode = "3094802";
+        String wroclawCityCode = "3081368";
+        String gdanskCityCode= "3099434";
+        String cityCodes=krakowCityCode+","+gdanskCityCode+","+wroclawCityCode;
         dateForUrl = getDateString(requestDate);
-        return null;
+        return serviceUrl+"group?id=" + cityCodes + "," + "&units=metric&APPID=" + serviceToken;
     }
 
     private String getDateString(String Date) {
@@ -51,7 +55,7 @@ public class ResponceUrlBuilder {
 
     }
 
-    public static boolean isDateValidFormat(String format, String value) {
+    private static boolean isDateValidFormat(String format, String value) {
         Date date = null;
         try {
             SimpleDateFormat sdf = new SimpleDateFormat(format);

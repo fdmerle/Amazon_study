@@ -43,9 +43,9 @@ public class MainTest extends TestListenerAdapter {
     public void failedTestWrapper() {
 
         List tmp = getPassedTests();
-
-        tmp = getFailedTests();
-        getAllTestMethods();
+        System.out.println("Size issss:_________________");
+        System.out.println(getFailedTests().size());
+        System.out.println( getAllTestMethods().length);
     }
 
 }

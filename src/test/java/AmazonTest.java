@@ -16,7 +16,7 @@ public class AmazonTest extends MainTest {
 
         amazonPage.searchForGoods("Droid Turbo", "Electronics", "Featured");
         inputData = new InputData();
-        amazonPage.filterResult(inputData.dataForFilter1());
+        amazonPage.filterResult(inputData.dataForFilter());
         String xPath = String.format(AmazonPage.CSS_FOR_MAIN_GOOD, 1);
         driver.waitTillElementLoaded(By.cssSelector(xPath));
         List tmpList = amazonPage.returnListOfElement();
@@ -28,9 +28,9 @@ public class AmazonTest extends MainTest {
     @Test
     public void someTest() {
 
-        Assert.assertEquals("void", "void");
+        Assert.assertEquals("void1", "void");
         TestListenerAdapter tmp = new TestListenerAdapter();
-        tmp.getFailedTests();
+        System.out.println(tmp.getFailedTests());
 
 
     }

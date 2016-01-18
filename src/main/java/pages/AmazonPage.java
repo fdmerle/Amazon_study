@@ -1,6 +1,7 @@
 package pages;
 
-import config.*;
+import config.DriverObject;
+import config.GoodsExemplar;
 import controls.InputField;
 import javafx.util.Pair;
 import org.openqa.selenium.By;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -89,16 +90,31 @@ public class AmazonPage extends Page {
         new Select(relevantsDropDown).selectByVisibleText(relevantsName);
     }
 
-    public void filterResult(List<Pair<String, String>> filterItem) {
+//    public void filterResult(List<Pair<String, String>> filterItem) {
+//
+//
+//        Pair<String, String> item;
+//        for (Iterator<Pair<String, String>> i = filterItem.iterator(); i.hasNext(); ) {
+//
+//            item = i.next();
+//            String cssValue = String.format(css_for_filter, item.getKey(), item.getValue());
+//            filterText = driver.waitTillElementClickable(By.xpath(cssValue));
+//
+//            filterText.click();
+//            driver.waitTillElementLoaded(By.xpath(FILTER_PARENT_XPATH));
+//        }
+//    }
 
 
+    public void filterResult(HashMap<String, String> filterItem) {
+
+        int i;
         Pair<String, String> item;
-        for (Iterator<Pair<String, String>> i = filterItem.iterator(); i.hasNext(); ) {
-
-            item = i.next();
-            String cssValue = String.format(css_for_filter, item.getKey(), item.getValue());
+        Object[] keySet = filterItem.keySet().toArray();
+        Object[] valueSet = filterItem.values().toArray();
+        for (i=0; i<filterItem.keySet().size();i++ ) {
+            String cssValue = String.format(css_for_filter, keySet[i], valueSet[i]);
             filterText = driver.waitTillElementClickable(By.xpath(cssValue));
-
             filterText.click();
             driver.waitTillElementLoaded(By.xpath(FILTER_PARENT_XPATH));
         }

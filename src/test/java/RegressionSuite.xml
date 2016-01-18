@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="example suite 1" verbose="1" >
-  <test name="RegressionSuite" >
+<suite name="example suite1" verbose="1" >
+  <test name="amazonTest" >
     <classes>
       <class name="AmazonTest"/>
-
     </classes>
  </test>
 </suite>

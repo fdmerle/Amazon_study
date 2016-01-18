@@ -12,7 +12,9 @@ import java.util.List;
 public class InputData {
 
 private  HashMap<String,String> hashMapFilter = new HashMap<>();
-private ArrayList<Pair<String, String>> hashMapFilter1;
+
+    private List <Pair<String,String>> hashMapFilter1=new ArrayList<Pair<String, String>>();
+
 
     public HashMap<String, String> dataForFilter(){
         hashMapFilter= new HashMap<>();
@@ -22,9 +24,9 @@ private ArrayList<Pair<String, String>> hashMapFilter1;
     }
 
     public List<Pair<String, String>> dataForFilter1(){
-        hashMapFilter1= new ArrayList();
+
+        //hashMapFilter1= new ArrayList();
         hashMapFilter1.add(new Pair("Brand", "Motorola"));
-        hashMapFilter1.add(new Pair("Condition","New"));
         return hashMapFilter1;
     }
 }
