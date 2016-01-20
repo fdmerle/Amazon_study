@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstraction_training/Abstraction_training.iml" filepath="$PROJECT_DIR$/Abstraction_training/Abstraction_training.iml" />
       <module fileurl="file://$PROJECT_DIR$/Amazon_study.iml" filepath="$PROJECT_DIR$/Amazon_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/RESTful/RESTful.iml" filepath="$PROJECT_DIR$/RESTful/RESTful.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_training/java_training.iml" filepath="$PROJECT_DIR$/java_training/java_training.iml" />
     </modules>
   </component>
 </project>

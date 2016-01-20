@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * Created by dmytro_moskalenko2 on 12/23/2015.
  */
-public class ResponceUrlBuilder {
+public class RespondUrlBuilder {
     private String serviceUrl = "http://api.openweathermap.org/data/2.5/";
     private String serviceToken = "7e6c68e6843af56620fcd8e6a14d62b1";
     private String selectedCountry = "pl";
@@ -17,16 +17,16 @@ public class ResponceUrlBuilder {
 
     public String returnUrl(String requestCity, String requestDate) {
         dateForUrl = getDateString(requestDate);
-        return serviceUrl+"weather?q=" + requestCity + "," + selectedCountry + "&units=metric&APPID=" + serviceToken;
+        return serviceUrl + "weather?q=" + requestCity + "," + selectedCountry + "&units=metric&APPID=" + serviceToken;
     }
 
     public String returnUrl(String requestDate) {
         String krakowCityCode = "3094802";
         String wroclawCityCode = "3081368";
-        String gdanskCityCode= "3099434";
-        String cityCodes=krakowCityCode+","+gdanskCityCode+","+wroclawCityCode;
+        String gdanskCityCode = "3099434";
+        String cityCodes = krakowCityCode + "," + gdanskCityCode + "," + wroclawCityCode;
         dateForUrl = getDateString(requestDate);
-        return serviceUrl+"group?id=" + cityCodes + "," + "&units=metric&APPID=" + serviceToken;
+        return serviceUrl + "group?id=" + cityCodes + "," + "&units=metric&APPID=" + serviceToken;
     }
 
     private String getDateString(String Date) {
@@ -64,7 +64,7 @@ public class ResponceUrlBuilder {
                 date = null;
             }
         } catch (ParseException ex) {
-            ex.printStackTrace();
+ //           ex.printStackTrace();
         }
         return date != null;
     }

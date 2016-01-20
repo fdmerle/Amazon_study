@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="examplesuite" verbose="1">
+<test name="AmazonTest">
+<listeners>
+    <listener class-name="ListenerClass" />
+</listeners>
+    <classes>
+        <class name="AmazonTest">
+            <methods>
+                <include name="amazonTest" />
+                <include name="someTest" />
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
